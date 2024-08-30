@@ -2,10 +2,11 @@ import streamlit as st
 import requests
 import json
 
-API_URL = "http://127.0.0.1:8000"
+API_URL = "http://127.0.0.1:8000/predict"
 
 models = {
-    "DecisionTree": "DecisionTree"
+    "Decision Tree": "decision_tree",
+    "KNN": "KNN"
 }
 
 def main():
@@ -32,6 +33,7 @@ def main():
             "petal_length": petal_length,
             "petal_width": petal_width
         }
+
         feature_data = [sepal_length, sepal_width, petal_length, petal_width]
 
         # Call FastAPI endpoint and get prediction result
