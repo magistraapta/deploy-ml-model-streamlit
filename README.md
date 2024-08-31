@@ -24,7 +24,7 @@ Projek ini menggunakan dataset iris-dataset yang sering digunakan untuk melakuka
 
 ```bash
   git clone (this repo)
-  cd 
+  cd deploy-ml-model-streamlit
 ```
 ### Run FastAPI Server
 
